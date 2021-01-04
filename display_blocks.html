@@ -3,6 +3,21 @@
     <head>
         <title>Display Blocks</title>
         <link rel="stylesheet" type="text/css" href="displaycss.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".blue").click(function(){
+                    $(this).hide('slow')
+                });
+                $(".red").click(function(){
+                    $(this).hide('slow')
+                });
+                $("button").click(function(){
+                    $('.blue').show('slow');
+                    $('.red').show('slow')
+                });
+            });
+        </script>
     </head>
     <body>
         <div id="wrapper">
@@ -68,6 +83,10 @@
                 <div class = "blue end">
                     <img src="images/codercat.jpg" class="">
                 </div>
+            </div>
+            <div class=bottom>
+                <button type=button>Restore Images!</button>
+                <h2>Click on the images to make them disappear!</h2>
             </div>
         </div>
     </body>
